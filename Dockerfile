@@ -3,4 +3,4 @@ FROM node
 RUN mkdir /app
 WORKDIR /app
 ADD . /app/
-RUN npm install
+RUN npm install --unsafe-perm=true
