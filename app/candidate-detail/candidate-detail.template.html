@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img ng-src="{{$ctrl.candidate.photo_url}}">
+    </div>
+    <div class="col-md-6">
+      <div class="input-group line">
+        <span class="input-group-addon" id="lastname">Last Name</span>
+        <input type="text" class="form-control" aria-describedby="lastname" ng-model="$ctrl.candidate.last_name">
+      </div>
+      <div class="input-group line">
+        <span class="input-group-addon" id="firstname">First Name</span>
+        <input type="text" class="form-control" aria-describedby="firstname" ng-model="$ctrl.candidate.first_name">
+      </div>
+      <div class="input-group line">
+        <span class="input-group-addon" id="birthday">Birthday</span>
+        <input type="text" class="form-control" aria-describedby="name" ng-model="$ctrl.candidate.birthday">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row line">
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-addon" id="address">Address</span>
+        <input type="text" class="form-control" aria-describedby="address" ng-model="$ctrl.candidate.address">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-addon" id="phone-number">Phone number</span>
+        <input type="text" class="form-control" aria-describedby="phone-number" ng-model="$ctrl.candidate.phone_number">
+      </div>
+    </div>
+    </div>
+
+  <div class="row line">
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-addon">Salary</span>
+        <input type="text" class="form-control" ng-model="$ctrl.candidate.salary">
+        <span class="input-group-addon">$</span>
+      </div>
+      </div>
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-addon" id="email">email</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon3" ng-model="$ctrl.candidate.email">
+      </div>
+    </div>
+  </div>
+
+  <div class="row line">
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="input-group-addon" id="photo_url">Photo URL</span>
+        <input type="text" class="form-control" aria-describedby="photo_url" ng-model="$ctrl.candidate.photo_url">
+      </div>
+    </div>
+  </div>
+
+  <div class="row line">
+    <div class="col-md-9">
+      <label for="description">Description</label>
+      <textarea id="description" ng-model="$ctrl.candidate.description" class="form-control"></textarea>
+    </div>
+    <div class="col-md-3">
+      <button type="button" class="btn btn-primary save-btn" ng-click="$ctrl.save()">Save</button>
+      <button type="button" class="btn btn-danger save-btn" ng-click="$ctrl.delete()">Delete</button>
+    </div>
+  </div>
+
+</div>

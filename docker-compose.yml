@@ -1,0 +1,7 @@
+version: '2'
+services:
+ candidates:
+   build: .
+   command: npm start
+   ports:
+     - "3050:3050"

@@ -1,0 +1,113 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+/* View: Candidate list */
+/*.candidates {*/
+  /*list-style: none;*/
+/*}*/
+
+/*.candidates li {*/
+  /*clear: both;*/
+  /*height: 115px;*/
+  /*padding-top: 15px;*/
+/*}*/
+
+/*.thumb {*/
+  /*float: left;*/
+  /*height: 100px;*/
+  /*margin: -0.5em 1em 1.5em 0;*/
+  /*padding-bottom: 1em;*/
+  /*width: 100px;*/
+/*}*/
+
+/*!* View: Candidate detail *!*/
+/*.candidate {*/
+  /*background-color: white;*/
+  /*border: 1px solid black;*/
+  /*float: left;*/
+  /*height: 400px;*/
+  /*margin-bottom: 2em;*/
+  /*margin-right: 3em;*/
+  /*padding: 2em;*/
+  /*width: 400px;*/
+/*}*/
+
+/*.candidate-thumbs {*/
+  /*list-style: none;*/
+  /*margin: 0;*/
+/*}*/
+
+
+
+/*.candidate-thumbs li {*/
+  /*background-color: white;*/
+  /*border: 1px solid black;*/
+  /*cursor: pointer;*/
+  /*display: inline-block;*/
+  /*margin: 1em;*/
+/*}*/
+
+/*.specs {*/
+  /*clear: both;*/
+  /*list-style: none;*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+/*}*/
+
+/*.specs dt {*/
+  /*font-weight: bold;*/
+/*}*/
+
+/*.specs > li {*/
+  /*display: inline-block;*/
+  /*vertical-align: top;*/
+  /*width: 200px;*/
+/*}*/
+
+/*.specs > li > span {*/
+  /*font-size: 1.2em;*/
+  /*font-weight: bold;*/
+/*}*/
+
+.photo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.common-info{
+    display: inline-block;
+    float: right;
+}
+
+.line{
+    margin-top: 15px;
+}
+
+.save-btn{
+    margin-top: 30px;
+  margin-left: 5px;
+}
+
+.common-preview{
+  display:inline-block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 35px;
+}
+
+.preview{
+  border: 1px solid rgba(0, 0, 0, 0.83);
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.salary-preview{
+  padding-top: 20px;
+}
