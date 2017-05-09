@@ -72,4 +72,10 @@
     </div>
   </div>
 
+  <div class="row" style="margin-top: 5px;" ng-repeat="alert in $ctrl.alerts">
+      <div class="alert alert-{{alert.type}}" role="alert">
+          {{alert.msg}}
+      </div>
+  </div>
+
 </div>

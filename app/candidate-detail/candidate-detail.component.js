@@ -8,6 +8,7 @@ angular.
     controller: ['$routeParams', 'Candidate',
       function CandidateDetailController($routeParams, Candidate) {
         var self = this;
+        this.alerts = [];
         self.candidate = Candidate.get({id: $routeParams.id});
         self.candidate.$promise.catch(function (response) {
             if (response.status == 404) {
@@ -15,10 +16,25 @@ angular.
             }
         });
         this.save = function(){
-            Candidate.update({id: $routeParams.id}, self.candidate);
+            Candidate.update({id: $routeParams.id}, self.candidate).$promise.then(
+                function (response) {
+                    self.alerts.push({
+                        msg: 'Saved',
+                        type: 'success'});
+                }
+            ).catch(
+                function(response){
+                    self.alerts.push({
+                        msg: 'Not saved! Something went wrong.',
+                        type: 'danger'});
+                }
+            );
+
         };
         this.delete = function(){
-            Candidate.delete({id: $routeParams.id});
+            Candidate.delete({id: $routeParams.id}).$promise.then(function (response) {
+                    window.location.href = '/#!/candidates/';
+            });
         };
       }
     ]
